@@ -7,7 +7,7 @@
   true
 */
 function isArray(xs) {
-  // Your code goes here ...
+  return Array.isArray([]);
 }
 
 console.log(isArray([1, 2, 4, 0])) // => true
@@ -19,7 +19,7 @@ console.log(isArray([1, 2, 4, 0])) // => true
   "Red,Green,White,Black"
 */
 function join(arr) {
-  // Your code goes here ...
+  return arr.join();
 }
 
 console.log(join(['Red', 'Green', 'White', 'Black'])); // => "Red,Green,White,Black"
@@ -30,7 +30,7 @@ console.log(join(['Red', 'Green', 'White', 'Black'])); // => "Red,Green,White,Bl
   Sample Output : -4, -3, 1, 2, 3, 5, 6, 7, 8
 */
 function sort(arr) {
-  // Your code goes here ...
+  return arr.sort();
 }
 
 console.log(sort([3, 8, 7, 6, 5, -4, 3, 2, 1])); // => [-4, -3, 1, 2, 3, 5, 6, 7, 8]

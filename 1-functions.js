@@ -4,7 +4,8 @@
   Expected Output : 34223
 */
 function reverseNumber(num) {
-  // Your code goes here ...
+  num = num + "";
+  return num.split("").reverse().join("");
 }
 
 console.log(reverseNumber(32243)); // => 34223
@@ -15,7 +16,7 @@ console.log(reverseNumber(32243)); // => 34223
   Expected Output : 'abeemrstw'
 */
 function alphabetOrder(str) {
-  // Your code goes here ...
+  return str.split("").sort().join("");
 }
 
 console.log(alphabetOrder('webmaster')); // => "abeemrstw"
@@ -26,7 +27,8 @@ console.log(alphabetOrder('webmaster')); // => "abeemrstw"
   Expected Output : 'Development'
 */
 function findLongestWord(sentence) {
-  // Your code goes here ...
+  var longestWord = sentence.split(" ").sort(function(a, b) { return b.length - a.length; });
+  return longestWord[0];
 }
 
 console.log(findLongestWord('Web Development Tutorial')); // => "Development"
@@ -37,7 +39,7 @@ console.log(findLongestWord('Web Development Tutorial')); // => "Development"
   Expected Output : "thequickbrownfxjmpsvlazydg"
 */
 function uniqueChars(str) {
-  // Your code goes here ...
+  return str.split('').filter(function(item, i, ar){ return ar.indexOf(item) === i; }).join('');
 }
 
 console.log(uniqueChars('thequickbrownfoxjumpsoverthelazydog')); // => "thequickbrownfxjmpsvlazydg"
